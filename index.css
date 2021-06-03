@@ -1,0 +1,327 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-size: 12px;
+}
+
+/* CSS for the Navigation Section */
+#navigation{
+  display: flex;
+  width: 100%;
+  height: 9vh;
+  justify-content: center;
+}
+.navigation h1 {
+  color:#7693a2;
+  font-size: 1.5rem;
+} 
+.nav1{
+  height: 9vh;
+  width: 92vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sections ul{
+  width: 55vw;
+  display: flex;
+  justify-content: space-between;
+}
+.sections li{
+  list-style:none;
+}
+.sections a{
+  text-decoration: none;
+}
+
+.login{
+  color: #32c5ff;
+  border: 2px solid #32c5ff;
+  border-radius: 8px;
+  box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.24);
+  padding: 14px 32px;
+}
+
+.phoneNav{
+  display:none;
+}
+.navigation a {
+  color:#7693a2
+} 
+
+
+/* CSS section for box 1 */
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 440px 440px 440px 520px 440px;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5";
+}
+.box1{
+  grid-area: box1;
+  background: linear-gradient(225deg, #32c5ff 0%, #b620e0 51.26%, #f7b500 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#springIsHere{
+  width: 344px;
+  height: 144px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+#springHeader{
+  font-size: 3rem;
+  color:white;
+}
+#springText{
+  line-height: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color:white;
+}
+.exploreProducts{
+  border-radius: 8px;
+  background:#6236FF;
+  border: 1px solid #6236ff;
+  padding: 1.5rem;
+  color: white;
+}
+.phoneImages{
+  width: 584px;
+  height: 200px;
+  /* z-index: 1; */
+}
+.phoneImages #left{
+  margin-right:20px;
+}
+
+
+/* CSS section for box 2 */
+.box2{
+  grid-area: box2;
+  background: url("triangle-background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr  340px 0.3fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "sec1 sec2"
+  ". sec3";
+}
+
+.sec1{
+grid-area: sec1;
+
+}
+.sec2{
+  grid-area: sec2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.sec3{
+  grid-area: sec3;
+  display: flex;
+  justify-content: flex-start;
+}
+#ibHeader {
+  color: #787D84;
+  font-size: 3rem;
+  margin-bottom: 17px;
+}
+#ibText{
+  color: #787D84;
+  font-size: 1.5rem;
+}
+.learnMore{
+  margin-top: 3rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.24), inset 0px 2px 0px #FFFFFF;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #D8D8D8 113.83%);
+  border: 1px solid #0091FF;
+  color: #0091FF;
+  width: 224px;
+  height: 48px;
+}
+.sec1 img{
+  margin-left: -120px;
+  margin-top: -50px;
+}
+
+
+/* CSS section for box 3 */
+
+.box3 {
+  grid-area: box3;
+  background: linear-gradient(
+    180deg,
+    rgba(50, 197, 255, 0.12) 0%,
+    #ffffff 100%
+  );
+  background-size: 100% 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.review{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review p{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#reviewText{
+  width: 57.5%;
+  color: #787D84;
+  font-size: 1.75rem;
+  margin-top:5vh;
+  margin-bottom:2vh;
+}
+#reviewAuthor{
+  color: #6D7278;
+  font-size: 1.3rem;
+}
+
+.reviewPeople{
+  margin-top: 2rem;
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.person1{
+  display: flex;
+  justify-content: space-evenly;
+}
+.person2{
+  display: flex;
+  justify-content: space-evenly;
+}
+.person3{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* CSS section for box 4 */
+
+.box4 {
+  grid-area: box4;
+  background: url("./assets/images/code-background.png");
+  background-size: 100% 100%;
+  /* z-index:4; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("code-background.png");
+
+}
+#readyToBuild{
+background-color: gba(0, 0, 0, 0.85);
+}
+#readyToBuildHeader{
+  font-family: Lato;
+  Font-style: Bold;
+  Font-size: 36px;
+  Line-height: 43px;
+  Line-height: 100%;
+  text-align: Left;
+  vertical-align: Top;
+  color:#FFFFFF
+}
+#readyToBuildText{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  color: #FFFFFF;
+}
+/* .readyToBuildB{
+
+} */
+.readyToBuildButton{
+  width: 224px;
+  height: 48px;
+  background-color: #000000;
+  color:#FFFFFF
+}
+.readyToBuildImage{
+
+}
+#code{
+  width: 512px;
+  height: 360px;
+}
+
+
+
+/* CSS section for box 5 */
+
+
+.box5 {
+  grid-area: box5;
+  background: linear-gradient(257.46deg,#32c5ff -7.2%, #b620e0 67.92%, #f7b500 139.34%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* z-index:4; */
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr  340px 0.3fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "section1 section2 section3 section4 ." 
+  "section5 section5 section5 section5 section5";
+}
+.section1 ul{
+list-style: none;
+color:white;
+}
+.section2 ul {
+  list-style: none;
+  color:white;  
+}
+.section3 ul{
+  list-style: none;
+  color:white;
+}
+.section4 ul{
+  list-style: none;
+  color:white;
+}
+
+
+.section5{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color:#FFFFFFF; 
+}
+.logo{
+  width: 205px;
+  height: 269px;
+}
